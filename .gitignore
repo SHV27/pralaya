@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+tests/artifacts/
+assets/art-src/
+assets/land-src/
+assets/map-src/
+.env*
+!.env.example

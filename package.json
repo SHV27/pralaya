@@ -1,0 +1,42 @@
+{
+  "name": "pralaya",
+  "private": true,
+  "version": "0.8.0",
+  "type": "module",
+  "description": "PRALAYA — The world ends. One walks out. A hot-seat adventure party game for 2–6 friends on one laptop: a broken world of floating islands, fate cards, creatures in three-lane duels, a world that eats the ground, last one standing wins.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test",
+    "e2e": "npm run build && playwright test",
+    "format": "prettier --write .",
+    "sim": "node scripts/sim8.ts"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "5.3.0",
+    "@fontsource/cinzel-decorative": "5.3.0",
+    "@fontsource/mukta": "5.3.0",
+    "gsap": "3.15.0",
+    "pixi-filters": "6.1.5",
+    "pixi.js": "8.22.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "fast-check": "4.10.2",
+    "prettier": "3.9.10",
+    "sharp": "0.34.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vite-plugin-pwa": "2.0.0",
+    "vitest": "5.0.5",
+    "workbox-build": "7.4.1",
+    "workbox-window": "7.4.1"
+  }
+}
